@@ -309,6 +309,87 @@ export const barChartBoxVisit = {
     ],
 };
 
+export const pieChartBoxSource = {
+    title: 'Leads by Source',
+    dataKey: 'value',
+    chartData: [
+        { name: 'Mobile', value: 400, color: '#0088FE' },
+        { name: 'Desktop', value: 300, color: '#00C49F' },
+        { name: 'Laptop', value: 300, color: '#FFBB28' },
+        { name: 'Tablet', value: 200, color: '#FF8042' },
+    ],
+};
+
+export const bigChartBoxRevenue = {
+    title: 'Revenue Analytics',
+    dataKey: 'name',
+    areaType: 'monotone',
+    areas: [
+        {
+            dataKey: 'books',
+            stroke: '#8884d8',
+            fill: '#8884d8',
+            stackId: 1,
+        },
+        {
+            dataKey: 'clothes',
+            stroke: '#82ca9d',
+            fill: '#82ca9d',
+            stackId: 1,
+        },
+        {
+            dataKey: 'electronic',
+            stroke: '#ffc658',
+            fill: '#ffc658',
+            stackId: 1,
+        },
+    ],
+    chartData: [
+        {
+            name: 'Sun',
+            books: 4000,
+            clothes: 2400,
+            electronic: 2400,
+        },
+        {
+            name: 'Mon',
+            books: 3000,
+            clothes: 1398,
+            electronic: 2210,
+        },
+        {
+            name: 'Tue',
+            books: 2000,
+            clothes: 9800,
+            electronic: 2290,
+        },
+        {
+            name: 'Wed',
+            books: 2780,
+            clothes: 3908,
+            electronic: 2000,
+        },
+        {
+            name: 'Thu',
+            books: 1890,
+            clothes: 4800,
+            electronic: 2181,
+        },
+        {
+            name: 'Fri',
+            books: 2390,
+            clothes: 3800,
+            electronic: 2500,
+        },
+        {
+            name: 'Sat',
+            books: 3490,
+            clothes: 4300,
+            electronic: 2100,
+        },
+    ],
+};
+
 export const userRows = [
     {
         id: 1,
