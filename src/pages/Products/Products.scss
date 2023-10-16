@@ -1,0 +1,23 @@
+.products {
+    .info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+
+        button {
+            background: var(--main-color);
+            color: var(--soft-bg);
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            cursor: pointer;
+            transition: 0.2s all;
+
+            &:hover {
+                background: var(--soft-bg);
+                color: var(--main-color);
+            }
+        }
+    }
+}
