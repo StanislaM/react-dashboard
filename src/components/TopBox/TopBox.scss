@@ -1,11 +1,18 @@
+@import '../../styles/responsive.scss';
+
 .topBox {
     h1 {
         margin-bottom: 20px;
+
+        @include sm {
+            font-size: 24px;
+        }
     }
 
     .list {
         .listItem {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
             margin-bottom: 25px;
