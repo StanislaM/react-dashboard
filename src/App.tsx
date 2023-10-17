@@ -9,6 +9,8 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Menu from './components/Menu/Menu';
 import Login from './pages/Login/Login';
+import User from './pages/User/User';
+import Product from './pages/Product/Product';
 
 const App = () => {
     const Layout = () => {
@@ -44,6 +46,14 @@ const App = () => {
                 {
                     path: 'products',
                     element: <Products />,
+                },
+                {
+                    path: 'users/:id',
+                    element: <User />,
+                },
+                {
+                    path: 'products/:id',
+                    element: <Product />,
                 },
             ],
         },
