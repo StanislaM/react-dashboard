@@ -55,8 +55,9 @@ const BigChartBox = ({
                         <XAxis dataKey={dataKey} />
                         <YAxis />
                         <Tooltip labelStyle={{ color: '#000' }} />
-                        {areas.map((area) => (
+                        {areas.map((area, i) => (
                             <Area
+                                key={i}
                                 type={areaType as CurveType}
                                 dataKey={area.dataKey}
                                 stackId={area.stackId}
