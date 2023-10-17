@@ -1,5 +1,12 @@
+@import '../../styles/responsive.scss';
+
 .single {
     display: flex;
+
+    @include xl {
+        flex-direction: column;
+        gap: 50px;
+    }
 
     .view {
         flex: 1;
@@ -10,6 +17,10 @@
                 align-items: center;
                 gap: 20px;
 
+                @include sm {
+                    flex-direction: column;
+                }
+
                 img {
                     width: 100px;
                     height: 100px;
@@ -19,6 +30,10 @@
 
                 h1 {
                     font-weight: 500;
+
+                    @include md {
+                        font-size: 24px;
+                    }
                 }
 
                 button {
@@ -35,6 +50,10 @@
 
             .details {
                 font-size: 18px;
+
+                @include sm {
+                    font-size: 14px;
+                }
 
                 .item {
                     margin: 30px 0;
@@ -59,6 +78,10 @@
             margin-top: 50px;
             width: 80%;
             height: 400px;
+
+            @include sm {
+                display: none;
+            }
         }
     }
 
@@ -93,6 +116,14 @@
                     min-width: 480px;
                     padding: 15px;
                     background: #f45b6910;
+
+                    @include md {
+                        min-width: 250px;
+                    }
+
+                    @include sm {
+                        min-width: 200px;
+                    }
 
                     p {
                         margin-bottom: 5px;

@@ -1,3 +1,5 @@
+@import '../../styles/responsive.scss';
+
 .menu {
     .item {
         display: flex;
@@ -11,6 +13,10 @@
             color: var(--soft-color);
             opacity: 0.7;
             text-transform: uppercase;
+
+            @include lg {
+                display: none;
+            }
         }
 
         .listItem {
@@ -22,6 +28,12 @@
 
             &:hover {
                 background: var(--soft-bg);
+            }
+
+            .listItemTitle {
+                @include lg {
+                    display: none;
+                }
             }
         }
     }
