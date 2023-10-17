@@ -11,10 +11,7 @@ const Menu = () => {
                     <div className="title">{item.title}</div>
                     {item.listItems.map((link) => (
                         <Link className="listItem" to={link.url} key={link.id}>
-                            <img
-                                src={`../src/assets/${link.icon}`}
-                                alt={link.title}
-                            />
+                            <img src={`./${link.icon}`} alt={link.title} />
                             <span className="listItemTitle">{link.title}</span>
                         </Link>
                     ))}

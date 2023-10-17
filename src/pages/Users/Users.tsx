@@ -2,7 +2,6 @@ import { GridColDef } from '@mui/x-data-grid';
 import DataTable from '../../components/DataTable/DataTable';
 import { useState } from 'react';
 
-import noAvatar from '@/assets/noavatar.png';
 import './Users.scss';
 import { userRows } from '../../data';
 import Add from '../../components/Add/Add';
@@ -14,7 +13,7 @@ const columns: GridColDef[] = [
         headerName: 'Avatar',
         width: 100,
         renderCell: (params) => {
-            return <img src={params.row.img || noAvatar} alt="" />;
+            return <img src={params.row.img || './noavatar.png'} alt="" />;
         },
     },
     {

@@ -25,7 +25,7 @@ const ChartBox = ({
         <div className="chartBox">
             <div className="boxInfo">
                 <div className="title">
-                    <img src={`src/assets${icon}`} alt="icon" />
+                    <img src={`./${icon}`} alt="icon" />
                     <span>{title}</span>
                 </div>
                 <h1>{number}</h1>

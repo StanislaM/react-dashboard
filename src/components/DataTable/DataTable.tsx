@@ -1,7 +1,5 @@
 import { DataGrid, GridColDef, GridToolbar } from '@mui/x-data-grid';
 import { Link } from 'react-router-dom';
-import view from '@/assets/view.svg';
-import del from '@/assets/delete.svg';
 import './DataTable.scss';
 
 interface IProps {
@@ -23,10 +21,10 @@ const DataTable = ({ columns, rows, slug }: IProps) => {
         renderCell: (params) => (
             <div className="action">
                 <Link to={`/${slug}/${params.row.id}`}>
-                    <img src={view} alt="view" />
+                    <img src="./view.svg" alt="view" />
                 </Link>
                 <div onClick={() => handleDelete(params.row.id)}>
-                    <img src={del} alt="delete" />
+                    <img src="./delete.svg" alt="delete" />
                 </div>
             </div>
         ),
