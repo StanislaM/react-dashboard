@@ -1,1 +1,1 @@
-Live preview: 1c75dc54.react-dashboard-eaj.pages.dev
+Live preview: https://react-dashboard-eaj.pages.dev
